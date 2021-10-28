@@ -1,0 +1,81 @@
+body {
+    user-select: none; /*убираем выделение символов*/
+}
+
+.calculator-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #212020;
+    border-radius: 5px;
+    max-width: 500px;
+    font-family: 'Calibri';
+    /*margin: 0 auto;*/
+    padding: 15px;
+}
+
+.calculator-container .input {
+    display: flex;
+    grid-column: 1/-1;
+    justify-content: flex-end;
+    height: auto;
+    min-height: 50px;
+    word-break: break-all;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 0 25px;
+    /*align-items: center;*/
+    /*margin: 0 20px;*/
+}
+
+.calculator-container .item, .itemDeg, .itemSin, .itemCos, .itemTan, .itemCtg, .itemXY, .itemLg, .itemIn, .itemX2, .itemClean, .itemBack, .itemPercent, .itemX-1, .itemAddition, .itemSubtraction,
+.itemFactorial, .itemSquareRoot, .itemMultiplication, .itemDivision, .itemPi, .itemEulerNumber, .itemEqual, .itemZero, .itemDot {
+    display: flex; /*выравниваем содержимое по вертикали*/
+    color: white;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.calculator-container .itemClean, .itemBack, .itemPercent ,.itemDivision, .itemAddition, .itemSubtraction, .itemMultiplication {
+    color: orange;
+}
+
+.calculator-container .itemEqual {
+    background-color: orange;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    margin: 0 0 0 10px;
+}
+.calculator-container .itemEqual:active {
+    background-color: rgba(255, 149, 86, 0.8);
+}
+
+.upper {
+    font-size: 20px;
+    margin-left: 3px;
+    margin-top: -20px;
+}
+
+.calculator-container .input {
+
+}
+.calculator-container .clean {
+
+}
+.calculator-container .back {
+
+}
+.calculator-container .equal {
+
+}
+.calculator-container .zero {
+
+}
+
+
+
